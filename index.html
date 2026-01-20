@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur Télescopique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="logo-container">
+        <img src="LOGO2.png" alt="Logo SOPEMA" class="logo">
+    </header>
+
+    <main class="main-content">
+        <h1>Trouvez Votre Pousse Tas Adapté</h1>
+<img src="pousse-tas.png" alt="Pousse-tas SOPEMA" class="img-produit">
+
+        <div class="dropdown-container">
+            <label for="search-telesco">Modèle de Télescopique :</label>
+            <div class="input-wrapper">
+                <input type="text" id="search-telesco" class="dropdown-input" placeholder="Rechercher un modèle..." autocomplete="off">
+            </div>
+            <div id="list-telesco" class="dropdown-content"></div>
+        </div>
+
+        <div class="dropdown-container">
+            <label for="search-culture">Culture Stockée :</label>
+            <div class="input-wrapper">
+                <input type="text" id="search-culture" class="dropdown-input" placeholder="Rechercher une culture..." autocomplete="off">
+            </div>
+            <div id="list-culture" class="dropdown-content"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="hauteur-stockage">Hauteur de Stockage (m)</label>
+            <div class="input-container no-arrow">
+                <input type="number" id="hauteur-stockage" class="dropdown-input" placeholder="Ex: 4.00" step="1.00" min="0">
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="input-group">
+                <label>Pousse Tas Adapté Flèche Rentrée</label>
+                <input type="text" id="result-rentree" class="dropdown-input result-field" readonly placeholder="...">
+            </div>
+
+            <div class="input-group">
+                <label>Pousse Tas Adapté Fèche Sortie</label>
+                <input type="text" id="result-sortie" class="dropdown-input result-field" readonly placeholder="...">
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

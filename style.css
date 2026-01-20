@@ -1,0 +1,191 @@
+body {
+    background-color: black !important;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Aligne le header et le contenu l'un sous l'autre */
+    align-items: center;    /* Centre horizontalement tous les enfants directs */
+    min-height: 100vh;      /* Prend toute la hauteur de l'écran */
+    font-family: Arial, sans-serif; /* Optionnel : pour une police plus propre */
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centre le contenu interne (h1, inputs) */
+    width: 100%;
+    max-width: 600px;       /* Limite la largeur max pour que ce soit joli sur PC */
+    padding: 20px;
+}
+
+/* On s'assure que les titres et groupes prennent bien le centre */
+h1 {
+    text-align: center;
+    color: #f1f5f9;
+    margin-bottom: 0px;
+    margin-top: 0px
+}
+
+.input-group, .dropdown-container {
+    width: 100%;           /* Utilise la largeur du parent (main-content) */
+    max-width: 350px;      /* Garde vos dimensions d'origine */
+    margin-left: auto;     /* Sécurité pour le centrage */
+    margin-right: auto;
+}
+
+/* Ajustement pour les résultats */
+.result-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #f7fa0b; 
+}
+
+.logo-container {
+    display: flex;            /* Active le mode Flexbox */
+    justify-content: center;   /* Centre horizontalement */
+    align-items: center;       /* Centre verticalement (si le header a une hauteur) */
+    padding: 15px 0;          /* Ajoute un peu d'espace au-dessus et en-dessous */
+    width: 100%;              /* Prend toute la largeur de l'écran */
+}
+
+.logo {
+    max-width: 350px;         /* Ajustez la taille selon vos besoins */
+    height: auto;             /* Garde les proportions de l'image */
+}
+
+
+h1 {
+    color: #f1f5f9;
+    margin-bottom: 30px;
+}
+
+.dropdown-container {
+    margin-bottom: 15px;
+    position: relative;
+    width: 350px;
+}
+
+label {
+font-size: 20px; /* Taille plus grande pour les titres de catégories */
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #e5e7eb;
+    text-align: center; /* Aligne le texte du label au centre */
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Flèche du menu déroulant */
+.input-wrapper::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid #888;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.dropdown-input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: white;
+    font-size: 14px;
+}
+
+/* CACHÉ PAR DÉFAUT */
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown-content div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.dropdown-content div:hover {
+    background-color: #e9ecef;
+}
+.input-group {
+    margin-bottom: 25px;
+    width: 300px;
+}
+
+/* Supprime la flèche pour le champ numérique */
+.no-arrow::after {
+    display: none;
+}
+
+/* Style spécifique pour l'input nombre */
+input[type=number] {
+    cursor: text;
+}
+/* Conteneur pour aligner les résultats si besoin */
+.result-container {
+    margin-top: 10px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+border-top: 1px solid #fbdc0a;
+}
+
+/* Style spécifique pour les champs de résultat (lecture seule) */
+.result-field {
+    background-color: #f8f9fa; /* Fond légèrement grisé */
+    border: 1px solid #ff0500; /* Bordure rouge pour souligner le résultat */
+    font-weight: bold;
+    color: #1e293b;
+    cursor: default;
+}
+
+.result-field:focus {
+    outline: none;
+    border-color: #ff0500; /* Garde la bordure rouge même au clic */
+}
+.dropdown-container, .input-group {
+    width: 100%;
+    max-width: 400px; /* Passage de 350px à 450px pour des cases plus longues */
+    margin-bottom: 30px; /* Un peu plus d'espace entre les blocs */
+}
+.logo-container {
+    flex-direction: column;   /* empile les images verticalement */
+}
+
+.img-produit {
+    /* --- MODIFIEZ CETTE VALEUR POUR CHANGER LA TAILLE --- */
+    width: 200px;           /* Vous pouvez mettre des pixels (px) */
+    
+    /* --- AUTRES RÉGLAGES IMPORTANTS --- */
+    height: auto;           /* Garde les proportions (évite d'écraser l'image) */
+    display: block;         /* Permet de bien appliquer les marges */
+    margin-left: auto;      /* Ces deux lignes centrent l'image */
+    margin-right: auto;     
+    margin-top: -40px;       /* Espace au-dessus (entre le titre et l'image) */
+    margin-bottom: 30px;    /* Espace en-dessous (entre l'image et le formulaire) */
+}
+

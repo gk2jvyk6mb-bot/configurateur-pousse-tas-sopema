@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;    /* Centre le contenu interne (h1, inputs) */
     width: 100%;
-    max-width: 700px;       /* Limite la largeur max pour que ce soit joli sur PC */
+    max-width: 600px;       /* Limite la largeur max pour que ce soit joli sur PC */
     padding: 20px;
 }
 
@@ -169,7 +169,7 @@ border-top: 1px solid #fbdc0a;
 }
 .dropdown-container, .input-group {
     width: 100%;
-    max-width: 470px; /* Passage de 350px à 450px pour des cases plus longues */
+    max-width: 400px; /* Passage de 350px à 450px pour des cases plus longues */
     margin-bottom: 30px; /* Un peu plus d'espace entre les blocs */
 }
 .logo-container {
@@ -188,16 +188,4 @@ border-top: 1px solid #fbdc0a;
     margin-top: -40px;       /* Espace au-dessus (entre le titre et l'image) */
     margin-bottom: 30px;    /* Espace en-dessous (entre l'image et le formulaire) */
 }
-.footer-text {
-    position: fixed;
-    bottom: 15px;
-    left: -20;
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    color: #ffffff;
-    background-color: transparent;
-}
-
-
 

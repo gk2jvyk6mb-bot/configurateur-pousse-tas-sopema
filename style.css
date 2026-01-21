@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;    /* Centre le contenu interne (h1, inputs) */
     width: 100%;
-    max-width: 700px;       /* Limite la largeur max pour que ce soit joli sur PC */
+    max-width: 800px;       /* Limite la largeur max pour que ce soit joli sur PC */
     padding: 20px;
 }
 
